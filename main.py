@@ -53,7 +53,7 @@ kb_qa = ConversationalRetrievalChain.from_llm(
 # )
 
 chat_history = []
-query_statement = "Ask a question here"
+query_statement = ""
 
 while query_statement != 'exit':
     query_statement = input('Enter your question here: > ')
