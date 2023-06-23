@@ -19,8 +19,8 @@ collection_name = 'collection1'
 local_directory = 'local_dir'
 persist_directory = os.path.join(os.getcwd(), local_directory)
 
-# loader = UnstructuredURLLoader(urls=h2o_ai_wave_urls, continue_on_failure=False)
-# loader = PlaywrightURLLoader(urls=h2o_ai_wave_urls, remove_selectors=["header", "footer"])
+# loader = UnstructuredURLLoader(urls=urls, continue_on_failure=False)
+# loader = PlaywrightURLLoader(urls=urls, remove_selectors=["header", "footer"])
 
 loader = DirectoryLoader('./docs')
 # loader = UnstructuredHTMLLoader("html/")
