@@ -32,7 +32,7 @@ class RetrievalAugmentedGeneration {
 
 const main = async (): Promise<void> => {
     const retrievalAugGen = new RetrievalAugmentedGeneration();
-    const search = await retrievalAugGen.similaritySearch("book ticket local currency","faiss_vectors/");
+    const search = await retrievalAugGen.similaritySearch("enter question here","faiss_vectors/");
     console.log(search);
 };
 
