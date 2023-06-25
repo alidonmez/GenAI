@@ -26,7 +26,7 @@ class RetrievalAugmentedGeneration {
 
     public async similaritySearch(question: string, vectorStoreDirectory: string): Promise<any> {
         const loadedVectorStore = await FaissStore.load(vectorStoreDirectory, this.newEmbeddings());
-        return await loadedVectorStore.similaritySearch(question, 1);
+        return await loadedVectorStore.similaritySearch(question, 2);
     }
 }
 
